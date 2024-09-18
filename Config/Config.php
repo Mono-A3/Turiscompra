@@ -1,5 +1,5 @@
 <?php
-const BASE_URL = "http://localhost/turiscompra/";
+const BASE_URL = "http://turiscompra.infinityfreeapp.com/";
 const HOST = "DB_HOST_PLACEHOLDER";
 const USER = "DB_USER_PLACEHOLDER";
 const PASS = "DB_PASS_PLACEHOLDER";
