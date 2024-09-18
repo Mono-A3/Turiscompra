@@ -16,8 +16,8 @@ jobs:
       - name: Update config.php with Secrets
         run: |
           echo "Actualizando config.php con secretos de GitHub"
-          sed -i "s/DB_HOST_PLACEHOLDER/${{ secrets.DB_HOST }}/g" Config/config.php
-          sed -i "s/DB_USER_PLACEHOLDER/${{ secrets.DB_USER }}/g" Config/config.php
-          sed -i "s/DB_PASS_PLACEHOLDER/${{ secrets.DB_PASS }}/g" Config/config.php
-          sed -i "s/DB_NAME_PLACEHOLDER/${{ secrets.DB_NAME }}/g" Config/config.php
-          sed -i "s/DB_PORT_PLACEHOLDER/${{ secrets.DB_PORT }}/g" Config/config.php
+          sed -i "s/DB_HOST_PLACEHOLDER/${{ secrets.DB_HOST }}/g" Config/Config.php
+          sed -i "s/DB_USER_PLACEHOLDER/${{ secrets.DB_USER }}/g" Config/Config.php
+          sed -i "s/DB_PASS_PLACEHOLDER/${{ secrets.DB_PASS }}/g" Config/Config.php
+          sed -i "s/DB_NAME_PLACEHOLDER/${{ secrets.DB_NAME }}/g" Config/Config.php
+          sed -i "s/DB_PORT_PLACEHOLDER/${{ secrets.DB_PORT }}/g" Config/Config.php
