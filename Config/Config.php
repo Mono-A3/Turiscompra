@@ -1,9 +1,9 @@
 <?php
 const BASE_URL = "http://localhost/turiscompra/";
-const HOST = "localhost";
-const USER = "root";
-const PASS = "";
-const DB = "tienda_virtual";
+const HOST = "DB_HOST_PLACEHOLDER";
+const USER = "DB_USER_PLACEHOLDER";
+const PASS = "DB_PASS_PLACEHOLDER";
+const DB = "DB_NAME_PLACEHOLDER";
 const CHARSET = "charset=utf8";
 const TITLE = "TURISCOMPRA";
 const MONEDA = "USD";

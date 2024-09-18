@@ -1,0 +1,23 @@
+name: Update Config with Secrets
+
+on:
+  push: # Ejecutar en cada push a la rama main
+    branches:
+      - main
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Update config.php with Secrets
+        run: |
+          echo "Actualizando config.php con secretos de GitHub"
+          sed -i "s/DB_HOST_PLACEHOLDER/${{ secrets.DB_HOST }}/g" config.php
+          sed -i "s/DB_USER_PLACEHOLDER/${{ secrets.DB_USER }}/g" config.php
+          sed -i "s/DB_PASS_PLACEHOLDER/${{ secrets.DB_PASS }}/g" config.php
+          sed -i "s/DB_NAME_PLACEHOLDER/${{ secrets.DB_NAME }}/g" config.php
+          sed -i "s/DB_PORT_PLACEHOLDER/${{ secrets.DB_PORT }}/g" config.php
