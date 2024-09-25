@@ -1,9 +1,9 @@
 <?php
 const BASE_URL = "https://turiscompra.infinityfreeapp.com/";
-const HOST = "DB_HOST_PLACEHOLDER";
-const USER = "DB_USER_PLACEHOLDER";
-const PASS = "DB_PASS_PLACEHOLDER";
-const DB = "DB_NAME_PLACEHOLDER";
+const HOST = "";
+const USER = "";
+const PASS = "";
+const DB = "";
 const CHARSET = "charset=utf8";
 const TITLE = "TURISCOMPRA";
 const MONEDA = "USD";
